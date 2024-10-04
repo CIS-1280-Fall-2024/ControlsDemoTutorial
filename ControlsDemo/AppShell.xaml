@@ -4,12 +4,18 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:ControlsDemo"
-    Shell.FlyoutBehavior="Disabled"
+    Shell.FlyoutBehavior = "Locked"
     Title="ControlsDemo">
-
+        <ShellContent
+            Title="Home"
+            ContentTemplate="{DataTemplate local:MainPage}"
+            Route="MainPage" />
+        <ShellContent
+            Title="Checkbox"
+            ContentTemplate="{DataTemplate local:CheckboxDemoPage}"
+            Route="CheckboxDemoPage" />
     <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
-
+            Title="RadioButton"
+            ContentTemplate="{DataTemplate local:RadioButtonDemoPage}"
+            Route="RadioButtonDemoPage" />
 </Shell>

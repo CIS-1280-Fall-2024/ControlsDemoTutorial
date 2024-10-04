@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ControlsDemo.CheckboxDemoPage"
+             Title="CheckboxDemoPage">
+    <VerticalStackLayout>
+        <Label 
+            Text="Checkbox Demo"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <HorizontalStackLayout>            
+            <Label Text="CheckBox1"/>
+            <CheckBox 
+                x:Name="checkBox1"
+                IsChecked="True" />
+        </HorizontalStackLayout>
+
+        <HorizontalStackLayout>
+            <Label Text="CheckBox2"/>
+            <CheckBox 
+                x:Name="checkBox2"
+                IsChecked="True" />
+        </HorizontalStackLayout>
+
+        <HorizontalStackLayout>
+            <Label Text="CheckBox3"/>
+            <CheckBox 
+                x:Name="checkBox3"
+                IsChecked="True" />
+        </HorizontalStackLayout>
+        <Button x:Name="btnSubmit" Text="Submit" Clicked="btnSubmit_Clicked"/>
+        <Label x:Name="lblResults" Text="Please select some items and click submit"/>
+    </VerticalStackLayout>
+</ContentPage>

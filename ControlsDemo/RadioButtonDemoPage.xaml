@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ControlsDemo.RadioButtonDemoPage"
+             Title="RadioButtonDemoPage">
+    <VerticalStackLayout>
+        <Label 
+            Text="Radio Button Demo"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+
+        <StackLayout>
+            <Label Text="What's your favorite animal?" />
+            <RadioButton x:Name="rbCat" Content="Cat" />
+            <RadioButton x:Name="rbDog" Content="Dog" />
+            <RadioButton x:Name="rbElephant" Content="Elephant" />
+            <RadioButton x:Name="rbMonkey" Content="Monkey"
+                 IsChecked="true" />
+        </StackLayout>
+
+        <StackLayout>
+            <Label Text="What's your favorite color?" />
+            <RadioButton x:Name="rbRed" Content="Red" />
+            <RadioButton x:Name="rbBlue" Content="Blue" />
+            <RadioButton x:Name="rbGreen" Content="Green" />
+            <RadioButton x:Name="rbYellow" Content="Yellow"
+                 IsChecked="true" />
+        </StackLayout>
+        <Button x:Name="submit" Text="Submit" Clicked="submit_Clicked"/>
+        <Label x:Name="lblResults" Text="Please select some items and click submit"/>
+    </VerticalStackLayout>
+</ContentPage>
